@@ -1,7 +1,23 @@
+/* font-family: 'Rampart One', cursive;
+font-family: 'Source Code Pro', monospace; 
+Extra-light 200 italic
+Regular 400
+Bold 700 */
+
+
+
+body {
+    background-color: #222222;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
 h1 {
+    
+    font-weight: 400;
     font-size: 3rem;
-    margin: 2rem 5rem;
-    color: cornflowerblue;
+    margin: 4rem 5rem 10rem 5rem;
+    color: #CBCBCB;
 }
 
 h2 {
@@ -9,4 +25,30 @@ h2 {
     margin: 2rem 5rem;
     color: blueviolet;
 
+}
+
+img {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+.card {
+    width: 320px;
+    height: 168px;
+    padding: 8px 0px;
+    background-color: white;
+    margin-left: 10rem;
+    opacity: 50%;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.card:hover {
+    opacity: 100%;
+    
 }
