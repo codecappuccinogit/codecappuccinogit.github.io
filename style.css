@@ -27,7 +27,7 @@ h2 {
 
 }
 
-img {
+.course {
     width: 300px;
     display: block;
     margin: 0 auto;
@@ -43,7 +43,7 @@ img {
     padding: 8px 0px;
     background-color: white;
     margin-left: 10rem;
-    opacity: 50%;
+    opacity: 80%;
     cursor: pointer;
     transition: 300ms;
 }
@@ -51,4 +51,13 @@ img {
 .card:hover {
     opacity: 100%;
     
+}
+
+.back-arrow {
+    width: 50px;
+    height: 50px;
+    filter: invert(93%) sepia(0%) saturate(0%) hue-rotate(151deg) brightness(89%) contrast(89%);}
+
+.back-link {
+    cursor: pointer;
 }
