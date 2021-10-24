@@ -53,3 +53,68 @@ h1 {
 #back-button:hover {
     color: white;
 }
+
+.files {
+    border-radius: 1rem;
+    margin-left: 4rem;
+    width: 40rem;
+    padding: 4rem;
+    background: rgb(68,68,68);
+
+}
+.download-link {
+
+    color: #CBCBCB;
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: block;
+    margin: 1rem 0;
+    transition: 300ms;
+}
+
+.download-link:hover {
+    color: white;
+    
+}
+
+.download-link:hover::after {
+    content: '  - click to download! - ';
+    font-size: 1rem;
+    
+}
+
+@media (max-width:600px) {
+    h1 {
+        font-size: 1.5rem;
+        margin: 1rem 2rem 3rem 1rem ;
+    }
+
+    .card {
+    width: 160px;
+    height: 84px;
+    padding: 3px 0px;
+    
+    margin-left: 3rem;
+    
+
+    }
+
+    .card img {
+        width: 150px;
+    }
+
+    #back-button {
+        font-size: 1.5rem;
+    }
+
+    .download-link {
+        font-size: 0.8rem;
+    }
+
+    .files {
+        border-radius: 1rem;
+        margin-left: 2rem;
+        width: 20rem;
+        padding: 1rem;
+    }
+}
