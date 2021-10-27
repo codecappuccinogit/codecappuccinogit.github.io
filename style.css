@@ -13,10 +13,18 @@ body {
 h1 {
     
     font-weight: 400;
-    width: 800px;
-    font-size: 2.5rem;
+    width: 760px;
+    
+    font-size: 2.6rem;
     margin: 4rem 5rem 10rem 5rem;
     color: #CBCBCB;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .course {
