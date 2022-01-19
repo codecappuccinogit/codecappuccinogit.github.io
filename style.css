@@ -24,10 +24,12 @@ h2 {
 a {
   color: inherit;
   text-decoration: none;
+  transition: ease-out 0.2s;
 }
 
 a:hover {
   color: red;
+  transition: ease-in 0.2s;
 }
 
 .cappuccino-icon {
@@ -37,6 +39,8 @@ a:hover {
 
 .course-image {
   margin-left: 2rem;
+  transition: ease-out 0.2s;
+  transition: ease-in 0.2s;
 }
 
 .course-image:hover {
