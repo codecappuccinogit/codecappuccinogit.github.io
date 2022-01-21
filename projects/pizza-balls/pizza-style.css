@@ -59,8 +59,7 @@ table {
 /* END OF  CSS RESET */
 
 body {
-  background: url("/projects/pizza-balls/dough_pic.jpg") center center fixed
-    no-repeat;
+  background: url("dough_pic.jpg") center center fixed no-repeat;
   background-size: cover;
   background-position: center center;
   font-family: "Dongle", sans-serif;
