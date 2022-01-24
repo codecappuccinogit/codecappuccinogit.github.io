@@ -48,12 +48,13 @@ a:hover {
 
 .linkBackArrow {
   color: var(--text-color);
-  margin-right: 0.5rem;
+  margin: 0 0.5rem 0 0;
 }
 
 .secondary-page {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .secondary-page-links {
