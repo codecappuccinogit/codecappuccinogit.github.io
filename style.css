@@ -1,69 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
-  --text-color: #cbcbcb;
+  --text-color: #000;
+  --bg-color: #d8dbe0;
+  --hover-color: #c39e79;
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("codecappuccino-bg.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
   background-color: #222222;
   font-family: "Roboto Mono", monospace;
-}
-
-h1 {
-  font-weight: 400;
-
-  font-size: 3rem;
-  margin: 3rem 5rem 10rem 5rem;
-  color: var(--text-color);
 }
 
 h2 {
   font-size: 2rem;
   color: var(--text-color);
-  margin: 30px;
+}
+
+nav {
+  padding: 2rem 1rem;
+  background-color: var(--bg-color);
+  font-weight: 700;
+  border-bottom: 25px solid black;
 }
 
 a {
-  color: inherit;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-right: 3rem;
   text-decoration: none;
   transition: ease-out 0.2s;
 }
 
 a:hover {
-  color: red;
+  color: var(--hover-color);
   transition: ease-in 0.2s;
 }
 
-.cappuccino-icon {
-  font-size: 3.5rem;
-  margin-right: 1.5rem;
-}
-
-.course-image {
-  margin-left: 2rem;
-  transition: ease-out 0.2s;
-  transition: ease-in 0.2s;
-}
-
-.course-image:hover {
-  box-shadow: 0px 0px 25px 7px rgba(255, 0, 0, 0.82);
-}
-
-.another-link {
-  margin-left: 2rem;
-}
-
-.another-link a {
-  display: block;
-  font-size: 1.5rem;
-  margin: 1rem;
+.linkBackArrow {
   color: var(--text-color);
+  margin-right: 0.5rem;
 }
 
-.another-link a:hover {
-  color: red;
+.secondary-page {
+  display: flex;
+  flex-direction: row;
 }
 
-@media (max-width: 500px) {
-  h1 {
-    margin: 3rem 1rem 5rem 2rem;
+.secondary-page-links {
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.secondary-page-links a {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.secondary-page-links a:hover {
+  color: var(--hover-color);
+}
+
+@media (max-width: 400px) {
+  body {
+    background-image: url("codecappuccino-mobile-bg.jpg");
+    background-position: bottom center;
+    background-size: auto 100vh;
+  }
+
+  nav {
+    font-weight: 700;
+    border-bottom: 15px solid black;
+  }
+
+  .secondary-page-nav {
+    padding: 0.5rem;
+  }
+
+  a {
+    margin: 0.2rem 0 0.5rem 0.2rem;
+    display: block;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .secondary-page-links a {
+    margin: 0;
+  }
+
+  .linkBack {
+    display: inline-block;
   }
 }
