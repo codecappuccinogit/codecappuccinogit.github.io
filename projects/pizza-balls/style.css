@@ -4,16 +4,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --color-primary: linear-gradient(
-    180deg,
-    rgba(255, 220, 175, 1) 0%,
-    rgba(255, 174, 117, 1) 100%
-  );
-
-  --color-background: #fdf8da;
-}
-
 body {
   background: url("dough_pic.jpg") center center fixed no-repeat;
   background-size: cover;
@@ -56,6 +46,14 @@ body {
   margin-right: 1rem;
   font-size: inherit;
   cursor: pointer;
+  transition: all 0.05s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .plus-icon {
@@ -63,6 +61,14 @@ body {
   margin-left: 1rem;
   font-size: inherit;
   cursor: pointer;
+  transition: all 0.05s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .ballsOutput {
@@ -80,4 +86,14 @@ body {
 .ballsNumberText {
   font-size: clamp(2rem, 6vw, 3.5rem);
   text-decoration: underline dotted;
+}
+
+.pressed {
+  transform: scale(1.3);
+  color: #333;
+}
+
+.pressed:focus {
+  outline: none !important;
+  box-shadow: none;
 }
